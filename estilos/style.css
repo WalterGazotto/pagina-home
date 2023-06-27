@@ -8,7 +8,9 @@
 body {
     height: 98vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: lightgray;
+    background:black url(../imagens/fundo.jpg) no-repeat center top fixed;
+    background-size: cover;
+    
 }
 
 header {
@@ -20,6 +22,7 @@ header h1 {
     font-size: 4em;
     text-align: center;
     padding-top: 30px;
+    font-variant: small-caps;
 }
 
 header p {
@@ -28,5 +31,67 @@ header p {
     font-size: 1.1em;
     width: 90vw;
     margin: auto;
-    margin-bottom: 10px;
+}
+
+section {
+    margin: auto;
+    margin-bottom: 30vh;
+    max-width: 700px;
+    background-image: linear-gradient(to top, gray, black );
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+div {
+    width: 300px;
+    margin: auto;
+}
+
+div h2{
+    color: white;
+    padding: 10px;
+}
+
+section div a {
+    display: none;
+    text-decoration: none;
+    max-width: 300px;
+    margin: auto;
+    padding: 5px;
+    font-weight: bold;
+    color: lightgray;
+}
+
+div:hover {
+    transition: 4s;
+}
+
+div:hover a {
+    display: block;
+    
+}
+
+a:hover {
+    text-decoration: underline;  
+}
+
+footer {
+    display: flexbox;
+    background-color: black;
+    color: white;
+    margin-top: 331px;
+}
+
+footer p {
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+a > img {
+    background-color: white;
 }

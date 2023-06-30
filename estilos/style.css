@@ -53,6 +53,15 @@ div h2{
     padding: 10px;
 }
 
+div.link a {
+    text-decoration: none;
+    color: white;
+} 
+
+div.link a:hover {
+    text-decoration: none;
+}
+
 div > a {
     display: none;
     text-decoration: none;

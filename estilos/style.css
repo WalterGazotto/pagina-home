@@ -35,7 +35,7 @@ header p {
 
 section {
     margin: auto;
-    margin-bottom: 30vh;
+    margin-bottom: 274px;
     max-width: 700px;
     background-image: linear-gradient(to top, gray, black );
     text-align: center;
@@ -47,12 +47,13 @@ div {
     margin: auto;
 }
 
+
 div h2{
     color: white;
     padding: 10px;
 }
 
-section div a {
+div > a {
     display: none;
     text-decoration: none;
     max-width: 300px;
@@ -62,24 +63,41 @@ section div a {
     color: lightgray;
 }
 
-div:hover {
-    transition: 4s;
-}
 
 div:hover a {
     display: block;
     
 }
 
-a:hover {
+div a:hover {
     text-decoration: underline;  
 }
 
+nav {
+    margin-top: 100px;
+    width: 200px;
+    height: 60px;
+    margin: auto;
+}
+
+nav img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+nav img:hover {
+    transform: translate(0px, -10px);
+    box-shadow: 0px 5px 10px white;
+    transition: .6s;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
 footer {
-    display: flexbox;
     background-color: black;
     color: white;
-    margin-top: 331px;
+    margin-top: ;
 }
 
 footer p {
@@ -92,6 +110,6 @@ footer a {
     color: white;
 }
 
-a > img {
+footer  img {
     background-color: white;
 }

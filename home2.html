@@ -18,16 +18,27 @@
         <a href="#"><img src="imagens/logo-instagram.jpg" alt=""></a>
         <a href="#"><img src="imagens/linkdin.png" alt=""></a>
     </section>
-    <main>
-        <span class="material-icons md-48">reorder</span>
-        <div class="menu">
+    <span class="material-icons md-48" onclick="clickMenu()">reorder</span>
+    
+    <menu id="menu">
             <h2>Projetos</h2>
             <h2>Desafios</h2>
             <h2>Certificados</h2>
-        </div>
-    </main>
+    </menu>
+    <section id="espaco">
+    </section>
     <footer>
         <p>Site criado por Walter Gazotto</p>
     </footer>
+
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

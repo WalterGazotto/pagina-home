@@ -9,22 +9,30 @@
 
 html, body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    background: url(../imagens/fundo2.jpg) center top fixed ;
+    background-size: cover;
 }
 
 header {
     text-align: center;
     padding: 30px;
-    background-color: lightseagreen;
+    background-color: #332424a8;
 }
 
 header h1 {
     margin-bottom: 20px;
     font-variant: small-caps;
+    color: white;
+    font-size: 3em;
+}
+
+header p {
+    color: white;
 }
 
 section#botoes {
-    background-color: lightseagreen;
+    background-color: #332424a8;
 }
 
 section#botoes img {
@@ -39,28 +47,51 @@ section#botoes img:hover {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.733);
 
     transform: translate(0px, -10px);
-    transition: 1s;
+    transition: .6s;
 }
 
-main {
-    background-color: aquamarine;
-    height: 60%;
-}
-
-main span {
-    background-color: blue;
+span {
+    background-color: #999999;
     width: 100%;
     text-align: center;
     padding: 10px;
     cursor: pointer;
 }
 
+#espaco {
+    height: calc(80% - 162px);
+}
 
+#menu {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 
-div.menu > h2 {
     display: none;
+    background-color: rgba(0, 0, 0, 0.116);
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
 }
 
-div.menu:hover > h2 {
-    display: block;
+#menu h2 {
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
 }
+
+#menu h2:hover {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 7px;
+    background-color: black;
+    color: white;
+}
+
+
